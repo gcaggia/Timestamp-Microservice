@@ -1,0 +1,22 @@
+{
+  "name": "timestamp-microservice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gcaggia/Timestamp-Microservice.git"
+  },
+  "author": "guillaume caggia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gcaggia/Timestamp-Microservice/issues"
+  },
+  "homepage": "https://github.com/gcaggia/Timestamp-Microservice",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
