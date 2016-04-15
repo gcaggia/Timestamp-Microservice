@@ -16,3 +16,9 @@ $ npm start
 ```
 
 Your app should now be running on [localhost:8080](http://localhost:8080/).
+
+# Documentation
+
+For more information about this application :
+
+- [How to use it :](https://timestamp-idnove.herokuapp.com/)
