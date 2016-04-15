@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/gcaggia/Timestamp-Microservice",
   "dependencies": {
+    "ejs": "^2.4.1",
     "express": "^4.13.4"
   }
 }
