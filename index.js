@@ -18,7 +18,8 @@ app.get("/", function(req, res) {
 
 // Url API
 app.get("/api/:arg", function(req, res) {
-    var param = req.query.tid;
+    var param = req.params.arg;
+    console.log("*** incoming request on API with param : " + param);
     res.end(timestamp.outPut(param));
 });
 
