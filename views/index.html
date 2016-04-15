@@ -7,14 +7,80 @@
     <!--Bootstrap-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" 
         type="text/css" />
+    <!--font-awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" 
+    type="text/css" />
     <!--custom css-->
     <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
 <body>
     <div class="container">
-        <div class="main">
+        <!--<div class="jumbotron">-->
             <h1>API Timestamp microservice</h1>
+            <hr>
+            <div class="row">
+                <div class="col-md-7">
+                    <p>Make a GET Request with a timestamp or natural language 
+            to get in return the correspondance in JSON format.</p>
+                </div>
+                <div class="col-md-5">
+                    <a class="btn btn-default btn-success" id="link-git"
+                        href="https://github.com/gcaggia/Timestamp-Microservice" target="_blank">
+                        <i class="fa fa-github fa-2x"></i> <span>&nbsp;See the code on Github</span>
+                    </a>
+                </div>
+            </div>
+            
+            <br>
+        <!--</div>-->
+        <div class="main">
+            <blockquote>
+                <strong>User stories:</strong>
+                <ol>
+                    <li> With a GET Request, you can pass a string as a parameter, and it will check 
+                    to see whether that string contains either a unix timestamp 
+                    or a natural language date (example: January 1, 2016)</li>
+                    <li>If it does, it returns both the Unix timestamp 
+                    and the natural language form of that date.</li>
+                    <li>If it does not contain a date or Unix timestamp, 
+                    it returns null for those properties.</li>
+                </ol>
+            </blockquote>
+            <h3>Example usage:</h3>
+            <div class="row">
+                <div class="col-md-7">
+                    <code class="text-info">https://timestamp-idnove.herokuapp.com/api/April%2015,%202016</code>
+                </div>
+                <div class="col-md-5">
+                    <a class="btn btn-default" target="_blank" 
+                        href="/api/April%2015,%202016">Test it </a>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-7">
+                    <code class="text-info">https://timestamp-idnove.herokuapp.com/api/1460678400</code>
+                </div>
+                <div class="col-md-5">
+                    <a class="btn btn-default" target="_blank"
+                        href="/api/1460678400">Test it </a>
+                </div>
+            </div>
+            <h3>Output:</h3>
+            <code class="text-info">{ "unix": 1460678400, "natural": "April 15, 2016" }</code>
         </div>
     </div>
+    
+    <footer>
+        <div class="container">
+            <div class="pull-left">
+                <p><a href="#">Guillaume</a></p>
+            </div>
+            <div class="pull-right">
+                <p>Designed and built with Node.js and Express</p>
+            </div>
+        </div>
+    </footer>
+    
 </body>
 </html>
